@@ -17,7 +17,7 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.util;
+package Parser.pddl4j.util;
 
 /**
  * This abstract class implements the common part of an operator what ever its representation, 

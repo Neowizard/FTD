@@ -17,7 +17,7 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.preprocessing;
+package Parser.pddl4j.preprocessing;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -28,14 +28,14 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import pddl4j.parser.Connective;
-import pddl4j.parser.Domain;
-import pddl4j.parser.Problem;
-import pddl4j.parser.RequireKey;
-import pddl4j.util.BitExp;
-import pddl4j.util.BitOp;
-import pddl4j.util.CondBitExp;
-import pddl4j.util.IntExp;
+import Parser.pddl4j.parser.Connective;
+import Parser.pddl4j.parser.Domain;
+import Parser.pddl4j.parser.Problem;
+import Parser.pddl4j.parser.RequireKey;
+import Parser.pddl4j.util.BitExp;
+import Parser.pddl4j.util.BitOp;
+import Parser.pddl4j.util.CondBitExp;
+import Parser.pddl4j.util.IntExp;
 
 /**
  * <p>

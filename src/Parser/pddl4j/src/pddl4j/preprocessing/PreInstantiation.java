@@ -17,7 +17,7 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.preprocessing;
+package Parser.pddl4j.preprocessing;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -26,8 +26,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-import pddl4j.parser.Connective;
-import pddl4j.util.IntExp;
+import Parser.pddl4j.parser.Connective;
+import Parser.pddl4j.util.IntExp;
 
 /*
  * Add a hack in method simplifiedOperatorWithInferredType 19/04/13.

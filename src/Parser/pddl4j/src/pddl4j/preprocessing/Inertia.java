@@ -17,7 +17,7 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.preprocessing;
+package Parser.pddl4j.preprocessing;
 
 /**
  * This class implement the concept of inertia. An inertia can be POSTIVE, NEGATIVE, FLUENT or only

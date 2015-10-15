@@ -17,7 +17,7 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.preprocessing;
+package Parser.pddl4j.preprocessing;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -26,10 +26,10 @@ import java.util.List;
 
 import java.util.Set;
 
-import pddl4j.util.BitExp;
-import pddl4j.util.BitOp;
-import pddl4j.util.CondBitExp;
-import pddl4j.util.IntExp;
+import Parser.pddl4j.util.BitExp;
+import Parser.pddl4j.util.BitOp;
+import Parser.pddl4j.util.CondBitExp;
+import Parser.pddl4j.util.IntExp;
 
 /**
  * This class implements a problem where operators are instantiated and encoded in

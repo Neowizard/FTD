@@ -17,7 +17,7 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.preprocessing;
+package Parser.pddl4j.preprocessing;
 
 /**
  * This interface defines the constants used during the preprocessing.

@@ -17,7 +17,7 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.preprocessing;
+package Parser.pddl4j.preprocessing;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
@@ -25,15 +25,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-import pddl4j.parser.DerivedPredicate;
-import pddl4j.parser.Domain;
-import pddl4j.parser.Exp;
-import pddl4j.parser.NamedTypedList;
-import pddl4j.parser.Op;
-import pddl4j.parser.Problem;
-import pddl4j.parser.Symbol;
-import pddl4j.parser.TypedSymbol;
-import pddl4j.util.IntExp;
+import Parser.pddl4j.parser.DerivedPredicate;
+import Parser.pddl4j.parser.Domain;
+import Parser.pddl4j.parser.Exp;
+import Parser.pddl4j.parser.NamedTypedList;
+import Parser.pddl4j.parser.Op;
+import Parser.pddl4j.parser.Problem;
+import Parser.pddl4j.parser.Symbol;
+import Parser.pddl4j.parser.TypedSymbol;
+import Parser.pddl4j.util.IntExp;
 
 /**
  * This class implements all the methods needed to encode operators, goal and initial state loaded

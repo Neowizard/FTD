@@ -17,16 +17,16 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.preprocessing;
+package Parser.pddl4j.preprocessing;
 
 import java.util.BitSet;
 import java.util.List;
 
-import pddl4j.parser.Symbol;
-import pddl4j.util.BitExp;
-import pddl4j.util.BitOp;
-import pddl4j.util.CondBitExp;
-import pddl4j.util.IntExp;
+import Parser.pddl4j.parser.Symbol;
+import Parser.pddl4j.util.BitExp;
+import Parser.pddl4j.util.BitOp;
+import Parser.pddl4j.util.CondBitExp;
+import Parser.pddl4j.util.IntExp;
 
 /**
  * This class implements the methods needed to convert the compact encoded objects used in the

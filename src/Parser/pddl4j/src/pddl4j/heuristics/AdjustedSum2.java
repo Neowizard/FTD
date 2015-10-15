@@ -16,11 +16,11 @@
  * You should have received a copy of the GNU General Public License
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
-package pddl4j.heuristics;
+package Parser.pddl4j.heuristics;
 
-import pddl4j.preprocessing.CodedProblem;
-import pddl4j.util.BitExp;
-import pddl4j.util.BitState;
+import Parser.pddl4j.preprocessing.CodedProblem;
+import Parser.pddl4j.util.BitExp;
+import Parser.pddl4j.util.BitState;
 
 /**
  * This class implement the adjusted sum 2 heuristic. This heuristic improves the adjusted sum

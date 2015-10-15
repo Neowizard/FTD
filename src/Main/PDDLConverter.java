@@ -1,10 +1,16 @@
 package Main;
 
-import Parser.javaff.data.UngroundProblem;
-import Parser.javaff.parser.*;
-import Model.Action;
+import Model.*;
+import Parser.pddl4j.parser.NamedTypedList;
+import Parser.pddl4j.parser.Op;
+import Parser.pddl4j.parser.Parser;
+import Parser.pddl4j.parser.TypedSymbol;
+import Parser.pddl4j.parser.Domain;
+import Parser.pddl4j.parser.Problem;
 
-import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 /**
@@ -37,7 +43,7 @@ public class PDDLConverter {
         System.out.println("\t-o <properties path>\t-\toutput the properties XML to <domain path>");
     }
 
-    public static void ParseInput(String[] args) {
+    public static void ParseArgs(String[] args) {
         boolean domainPathSet = false;
         boolean problemPathSet = false;
         for (int arg_idx = 0; arg_idx < args.length; arg_idx++) {
@@ -89,21 +95,38 @@ public class PDDLConverter {
             System.exit(1);
         }
 
-        ParseInput(args);
+        ParseArgs(args);
 
-        ConvertProps(inDomain, inProblem);
-        ConvertDomain(inDomain);
-        ConvertProblem(inProblem);
+        Parser parser = new Parser();
+        try {
+            parser.parse(inDomainPath, inProblemPath);
+        } catch (FileNotFoundException e) {
+            System.out.println("Failed to open input domain or problem files for parsing\n" + e.toString());
+            e.printStackTrace();
+        }
+
+
+        ConvertProps(parser);
+        Model.Domain outDomain = ConvertDomain(parser);
+        Model.Problem outProblem = ConvertProblem(parser);
 
         System.out.println("Wrote Properties XML to " + outPropPath);
         System.exit(0);
     }
-/*
-    private static void ConvertProblem(Problem inProblem) {
+
+    private static Model.Problem ConvertProblem(Parser parser) {
+        Problem inProblem = parser.getProblem();
+        Domain inDomain = parser.getDomain();
+
+        Model.Problem convProblem = new Model.Problem(inProblem.getName().toString(), inDomain.getName().toString());
+
+        return convProblem;
     }
 
-    private static Model.Domain ConvertDomain(Domain inDomain) {
+    private static Model.Domain ConvertDomain(Parser parser) {
+        Domain inDomain = parser.getDomain();
         Model.Domain convDomain = new Model.Domain(inDomain.getName().toString());
+
         for (TypedSymbol type : inDomain.getTypes()){
             convDomain.ObjectTypes.add(type.toString());
         }
@@ -123,14 +146,15 @@ public class PDDLConverter {
         return convAction;
     }
 
-    private static void ConvertProps(Domain inDomain, Problem inProblem) {
+    private static void ConvertProps(Parser parser) {
+
         Properties props = new Properties();
         props.put("k", Integer.toString(maxFaults));
         props.put("domain", outDomainPath);
         props.put("problem", outProblemPath);
 
-        props.put("domName", inDomain.getName().toString());
-        props.put("probName", inProblem.getName().toString());
+        props.put("domName", parser.getDomain().getName().toString());
+        props.put("probName", parser.getProblem().getName().toString());
 
         // TODO: Add custom compiler output path option
         props.put("domOutput", "./outputDom.pddl");
@@ -146,5 +170,5 @@ public class PDDLConverter {
             System.err.println("Couldn't write properties XML to " + outPropPath + ":\n" + e.toString());
             e.printStackTrace();
         }
-    }*/
+    }
 }

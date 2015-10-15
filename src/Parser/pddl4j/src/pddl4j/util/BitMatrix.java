@@ -17,7 +17,7 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.util;
+package Parser.pddl4j.util;
 
 import java.util.Arrays;
 import java.util.BitSet;

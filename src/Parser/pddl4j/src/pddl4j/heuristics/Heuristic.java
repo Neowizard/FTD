@@ -17,12 +17,12 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.heuristics;
+package Parser.pddl4j.heuristics;
 
 import java.io.Serializable;
 
-import pddl4j.util.BitExp;
-import pddl4j.util.BitState;
+import Parser.pddl4j.util.BitExp;
+import Parser.pddl4j.util.BitState;
 
 /**
  * This interface defines the methods accessible from all heuristics. An heuristic is a function

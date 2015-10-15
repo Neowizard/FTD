@@ -17,14 +17,14 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.util;
+package Parser.pddl4j.util;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import pddl4j.parser.Connective;
+import Parser.pddl4j.parser.Connective;
 
 /**
  * This class is used to encode expressions in compact encoding, i.e., with integer representation.

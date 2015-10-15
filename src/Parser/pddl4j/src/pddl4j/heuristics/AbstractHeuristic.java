@@ -17,14 +17,14 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.heuristics;
+package Parser.pddl4j.heuristics;
 
 import java.util.List;
 
-import pddl4j.preprocessing.CodedProblem;
-import pddl4j.util.BitExp;
-import pddl4j.util.BitOp;
-import pddl4j.util.IntExp;
+import Parser.pddl4j.preprocessing.CodedProblem;
+import Parser.pddl4j.util.BitExp;
+import Parser.pddl4j.util.BitOp;
+import Parser.pddl4j.util.IntExp;
 
 /**
  * This abstract class implements the basic methods of all heuristics.

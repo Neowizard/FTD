@@ -17,13 +17,13 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.preprocessing;
+package Parser.pddl4j.preprocessing;
 
 import java.util.Arrays;
 
-import pddl4j.parser.Connective;
-import pddl4j.util.AbstractCodedOp;
-import pddl4j.util.IntExp;
+import Parser.pddl4j.parser.Connective;
+import Parser.pddl4j.util.AbstractCodedOp;
+import Parser.pddl4j.util.IntExp;
 
 /**
  * This class implements an operator. This class is used to store compact representation of operator

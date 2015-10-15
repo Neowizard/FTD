@@ -17,11 +17,11 @@
  * along with PDDL4J.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package pddl4j.heuristics;
+package Parser.pddl4j.heuristics;
 
-import pddl4j.preprocessing.CodedProblem;
-import pddl4j.util.BitExp;
-import pddl4j.util.BitState;
+import Parser.pddl4j.preprocessing.CodedProblem;
+import Parser.pddl4j.util.BitExp;
+import Parser.pddl4j.util.BitState;
 
 /**
  * This heuristic returns the level of the planning graph where all the propositions of the goal are
