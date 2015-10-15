@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Generated properties file created by PDDLConverted</comment>
+<entry key="probName">bw_5_1</entry>
+<entry key="domOutput">./outputDom.pddl</entry>
+<entry key="k">2</entry>
+<entry key="domName">blocks-domain</entry>
+<entry key="problem">./Non-Det-PlaningProbs/pddl/blocksworld/p1.xml</entry>
+<entry key="domain">./Non-Det-PlaningProbs/pddl/blocksworld/domain.xml</entry>
+<entry key="probOutput">./outputProb.pddl</entry>
+</properties>

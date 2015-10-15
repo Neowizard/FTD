@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Ron and Mor FT convertor Settings</comment>
+    <entry key="k">2</entry>
+    <entry key="probName">Robot_01</entry>
+    <entry key="domOutput">./Non-Det-PlaningProbs/Robot/1-NonDetAction/RobotDomOne.pddl</entry>
+    <entry key="domName">Robot</entry>
+    <entry key="problem">./Non-Det-PlaningProbs/Robot/1-NonDetAction/robot_problem.xml</entry>
+    <entry key="domain">./Non-Det-PlaningProbs/Robot/1-NonDetAction/robot_domain.xml</entry>
+    <entry key="probOutput">./Non-Det-PlaningProbs/Robot/1-NonDetAction/RobotProb.pddl</entry>
+</properties>
