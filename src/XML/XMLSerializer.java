@@ -210,7 +210,7 @@ public class XMLSerializer {
      */
     public static Domain toObjectDomain(File inputXML) {
         XStream xstream = new XStream(new DomDriver());
-        xstream.alias("Domain", InputDomain.class);
+        xstream.alias("Domain", Model.InputDomain.class);
         // xstream.alias("Predicates", Predicate.class);
         xstream.alias("Parameter", Parameter.class);
         xstream.alias("Literal", Literal.class);

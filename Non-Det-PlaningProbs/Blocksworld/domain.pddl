@@ -1,13 +1,7 @@
 (define (domain blocks-domain)
-  (:requirements :non-deterministic :equality :typing :negative-preconditions)
+  (:requirements :non-deterministic :equality :typing)
   (:types block)
   (:predicates (holding ?b - block) (emptyhand) (on-table ?b - block) (on ?b1 ?b2 - block) (clear ?b - block))
-  (:action dummy
-    :parameters (?b - blob ?b2 ?b3 - block)
-    :precondition (and (= ?b ?b2) (x ?b ?b2) (and (not (y ?b ?b3)) (z ?b1 ?b2 ?b3)))
-    :effect (emptyhand)
-  )
-  
   (:action pick-up
     :parameters (?b1 ?b2 - block)
     :precondition (and (not (= ?b1 ?b2)) (emptyhand) (clear ?b1) (on ?b1 ?b2))

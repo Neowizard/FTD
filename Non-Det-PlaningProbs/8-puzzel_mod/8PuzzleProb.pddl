@@ -16,6 +16,10 @@
 	level_0_0 - levelType
 	level_1_1 - levelType
 	level_1_2 - levelType
+	level_1_3 - levelType
+	level_2_1 - levelType
+	level_2_2 - levelType
+	level_2_3 - levelType
 )
 
 (:init
@@ -33,16 +37,24 @@
 	(tile-at-pos t8 p2 p1 level_0_0)
 	(is-blank p2 p2 level_0_0)
 	(not-in-move-left)
-	(not-in-move-right)
-	(not-in-move-up)
-	(not-in-move-down)
 	(closed level_1_1)
 	(closed level_1_2)
+	(closed level_1_3)
+	(closed level_2_1)
+	(closed level_2_2)
+	(closed level_2_3)
 	(next-level-of-move-left level_0_0 level_1_1)
 	(next-level-of-move-left level_0_0 level_1_2)
-	(next-level-of-move-right level_0_0 level_1_1)
-	(next-level-of-move-up level_0_0 level_1_1)
-	(next-level-of-move-down level_0_0 level_1_1)
+	(next-level-of-move-left level_0_0 level_1_3)
+	(next-level-of-move-left level_1_1 level_2_1)
+	(next-level-of-move-left level_1_1 level_2_2)
+	(next-level-of-move-left level_1_1 level_2_3)
+	(next-level-of-move-left level_1_2 level_2_1)
+	(next-level-of-move-left level_1_2 level_2_2)
+	(next-level-of-move-left level_1_2 level_2_3)
+	(next-level-of-move-left level_1_3 level_2_1)
+	(next-level-of-move-left level_1_3 level_2_2)
+	(next-level-of-move-left level_1_3 level_2_3)
 )
 
 (:goal

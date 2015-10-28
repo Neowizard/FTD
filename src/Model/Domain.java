@@ -63,6 +63,9 @@ public class Domain implements Serializable {
             // begin domain
             bufferedWriter.write("(define (domain " + Name + ")");
             bufferedWriter.newLine();
+            // begin requirements
+            bufferedWriter.write("(:requirements :equality :negative-preconditions :typing)");
+            bufferedWriter.newLine();
             // begin types
             bufferedWriter.write("\t(:types");
             for (String type : ObjectTypes) {

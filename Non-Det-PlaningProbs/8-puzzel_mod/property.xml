@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
     <comment>Ron and Mor FT convertor Settings</comment>
-    <entry key="k">1</entry>
+    <entry key="k">2</entry>
     <entry key="probName">8-Puzzle_3X3</entry>
     <entry key="domOutput">./Non-Det-PlaningProbs/8-puzzel/8PuzzleDom.pddl</entry>
     <entry key="domName">8-Puzzle</entry>
